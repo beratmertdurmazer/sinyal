@@ -111,6 +111,10 @@ section {
   position: relative;
 }
 
+section[id] {
+  scroll-margin-top: 120px;
+}
+
 .section-tag {
   color: var(--color-primary);
   font-family: var(--font-display);
@@ -331,9 +335,13 @@ header.scrolled {
 
 /* Hero inside pitch grid — reduce excessive padding */
 .hero.hero-flow {
-  padding-top: 8rem;
-  padding-bottom: 3rem;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
   background: none;
+}
+
+.hero-content .section-tag {
+  margin-bottom: 1.25rem;
 }
 
 .hero-content h1 {
@@ -2471,7 +2479,7 @@ footer {
   }
 
   .pitch-content-flow section:first-child {
-    padding-top: 6rem;
+    padding-top: 8rem;
   }
 
   .pitch-content-flow section:last-child {
@@ -2480,8 +2488,8 @@ footer {
 
   .pitch-sidebar-zone {
     position: sticky;
-    top: 80px;
-    height: calc(100vh - 100px);
+    top: 100px;
+    height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
     align-items: center;
